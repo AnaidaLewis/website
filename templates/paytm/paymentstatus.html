@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Paytm payment status</title>
+    </head>
+    <body>
+        {{response}}
+        <h1>Payment status regarding your order Id {{response.ORDER_ID}}</h1>
+        {% if response.RESPCODE == '01'%}
+        ORDER SUCCESS
+        {%else%}
+        ORDER FAILURE
+        {% endif %}
+    </body>
+    <script>
+        document.checkout.submit()
+    </script>
+</html>

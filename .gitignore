@@ -1,0 +1,7 @@
+.eslintcache
+*.pyc
+__pycache__/
+.env
+.venv
+env/
+venv/
